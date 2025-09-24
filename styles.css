@@ -117,7 +117,7 @@ a:hover{
     border: none;
     outline: none;
     cursor: pointer;
-    border: 1px solid transparent;
+    border: 1px solid #20507a;
 }
 button:hover{
     transition: 0.5s;
@@ -129,6 +129,11 @@ button:hover{
     flex-direction: row;
     gap: 24px;
     align-items: center;
+}
+.right-1 svg:hover{
+    color: #153B50;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 .right-2{
@@ -151,7 +156,7 @@ input{
     width: 700px;
     height: 20px;
     padding: 5px 15px;
-    color: #153B50;
+    color: grey;
 }
 input:focus {
     border-color: #153B50; /* or any color you want */
@@ -164,6 +169,13 @@ input:focus {
     background-color: rgb(30, 30, 30); 
     padding: 32px;
 }
+
+.main-heading{
+    display: flex;
+    gap: 810px;
+}
+
+
 img{
     height: 50px;
     width: 50px;
@@ -174,4 +186,116 @@ img{
 h3, h6{
     color: white;
 }
+.card svg{
+    width: 20px;
+    height: 20px;
+    color: grey;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
 
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: #242424;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 24px;
+    border-left: 8px solid #817E9F;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.card:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 0 12px grey; 
+  transition: 0.2s
+}
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+.card-content h4,
+.card-content p {
+    margin: 0;
+    padding: 0;
+}
+.card-content p{
+    color: grey;
+}
+.card-icons{
+    display: flex;
+    gap: 16px; 
+    justify-content: flex-end;
+}
+.card svg:hover{
+    color: white;
+}
+
+.main-content1{
+    display: grid;
+    grid-template-columns: 410px 410px;
+    gap: 16px;
+    max-width: 700px;
+    
+    
+}
+.main-content2 h4,
+.main-content2 p{
+    margin: 0;
+    padding: 0;
+}
+.main-content2 h4{
+    color: #fff;
+}
+.main-content2 p{
+    color: grey;
+}
+
+.main-contentBG{
+    background-color: #242424;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.right-content1,
+.right-content2,
+.right-content3{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: small;
+}
+.right-content2{
+    border-top: 2px solid grey ;
+    border-bottom: 2px solid grey;
+    padding: 8px 0px;
+}
+
+.trending{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: small;
+    align-items: center;
+}
+
+.main-contentLG img{
+    border: none;
+}
+.trending-content{
+    border: 1px solid black;
+    padding: 24px;
+    border-radius: 8px;
+    background: radial-gradient(circle at top left, #153B50, #000 80%);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
